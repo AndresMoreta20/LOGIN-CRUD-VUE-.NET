@@ -31,8 +31,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Views}/{action=Index}");
 
 app.Run();
