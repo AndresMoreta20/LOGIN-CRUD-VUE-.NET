@@ -19,7 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
 // 1. DbContext
-builder.Services.AddDbContext<StoreDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("db")));
+builder.Services.AddDbContext<StoreDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("db")));
 
 // 2. Identity
 builder.Services.AddIdentity<User, IdentityRole>()

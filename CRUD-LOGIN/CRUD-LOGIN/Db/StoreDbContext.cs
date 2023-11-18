@@ -6,7 +6,7 @@ using System;
 
 namespace CRUD_LOGIN.Db
 {
-    public class StoreDbContext : IdentityDbContext
+    public class StoreDbContext : IdentityDbContext<User>
     {
         public StoreDbContext(DbContextOptions<StoreDbContext> options) : base(options)
         {
