@@ -1,5 +1,9 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <router-view></router-view>
+  </div>
+
 <List/>
 </template>
 
